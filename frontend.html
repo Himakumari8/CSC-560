@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="crudApp">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CRUD Application with AngularJS</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+  <script src="app.js"></script>
+</head>
+
+<body>
+  <h1>CRUD Application with AngularJS</h1>
+  <div ng-controller="crudController">
+    <form ng-submit="submitForm()">
+      <h2>{{formTitle}}</h2>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" ng-model="formData.name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" ng-model="formData.email" required>
+      <button type="submit">{{formButton}}</button>
+    </form>
+    <hr>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Edit/Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="person in people">
+          <td>{{person.name}}</td>
+          <td>{{person.email}}</td>
+          <td>
+            <button ng-click="editPerson(person)">Edit</button>
+            <button ng-click="deletePerson(person)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+
+</html>
