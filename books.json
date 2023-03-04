@@ -1,0 +1,38 @@
+[
+    {
+      "title": "The Hitchhiker's Guide to the Galaxy",
+      "author": "Douglas Adams",
+      "genre": "Science Fiction",
+      "year": 1979,
+      "publisher": "Pan Books"
+    },
+    {
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "genre": "Classic",
+      "year": 1960,
+      "publisher": "J. B. Lippincott & Co."
+    },
+    {
+      "title": "The Lord of the Rings",
+      "author": "J. R. R. Tolkien",
+      "genre": "Fantasy",
+      "year": 1954,
+      "publisher": "George Allen & Unwin"
+    },
+    {
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "genre": "Romance",
+      "year": 1813,
+      "publisher": "T. Egerton"
+    },
+    {
+      "title": "1984",
+      "author": "George Orwell",
+      "genre": "Dystopian",
+      "year": 1949,
+      "publisher": "Secker & Warburg"
+    }
+  ]
+  
